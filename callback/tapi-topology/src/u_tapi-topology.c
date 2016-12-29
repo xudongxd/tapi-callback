@@ -5923,7 +5923,7 @@ static status_t attach_link_elements(val_value_t *parent_val, const char *link_u
     /*
      * Attach /network-topology/link/direction leaf
      */
-    //ATTACH_LEAF(link_val, direction);
+    ATTACH_LEAF(link_val, direction);
 
     /*
      * Attach /network-topology/link/name list
@@ -6222,14 +6222,14 @@ static status_t attach_link_transfer_capacity_capacity_assigned_to_user_view_lis
     /*
      * Attach /network-topology/link/transfer-capacity/capacity-assigned-to-user-view/other leavies
      */
-/*	obj_template_t *next_obj = NULL;
+	obj_template_t *next_obj = NULL;
 	next_obj = obj_next_child(obj_find_child(capacity_assigned_to_user_view_val->obj,
                 y_tapi_topology_M_tapi_topology,
                 y_tapi_topology_N_total_size));
 
 	res = create_and_init_siblings(next_obj, capacity_assigned_to_user_view_val, y_tapi_topology_M_tapi_topology, true);
 	YUMA_ASSERT(res != NO_ERR, return ERR_INTERNAL_VAL, "create_and_init_siblings failed!");
-*/
+
     return NO_ERR;
 }
 
@@ -6508,7 +6508,7 @@ static status_t attach_node_elements(val_value_t *parent_val, const char *node_u
     }
 
     /*
-     * Attach /network-topology/node/encap_topology leaf
+     * Attach /network-topology/node/encap-topology leaf
      */
     ATTACH_LEAF(node_val, encap_topology);
 
@@ -6885,14 +6885,14 @@ static status_t attach_node_transfer_capacity_capacity_assigned_to_user_view_lis
     /*
      * Attach /network-topology/node/transfer-capacity/capacity-assigned-to-user-view/other leavies
      */
-/*	obj_template_t *next_obj = NULL;
+	obj_template_t *next_obj = NULL;
 	next_obj = obj_next_child(obj_find_child(capacity_assigned_to_user_view_val->obj,
                 y_tapi_topology_M_tapi_topology,
                 y_tapi_topology_N_total_size));
 
 	res = create_and_init_siblings(next_obj, capacity_assigned_to_user_view_val, y_tapi_topology_M_tapi_topology, true);
 	YUMA_ASSERT(res != NO_ERR, return ERR_INTERNAL_VAL, "create_and_init_siblings failed!");
-*/
+
     return NO_ERR;
 }
 
@@ -7017,17 +7017,17 @@ static status_t attach_node_owned_node_edge_point_layer_protocol_list(val_value_
     /*
      * Attach /network-topology/node/owned-node-edge-point/layer-protocol/layer-protocol-name leaf
      */
-    //ATTACH_LEAF(layer_protocol_val, layer_protocol_name);
+    ATTACH_LEAF(layer_protocol_val, layer_protocol_name);
 
     /*
      * Attach /network-topology/node/owned-node-edge-point/layer-protocol/termination-direction leaf
      */
-    //ATTACH_LEAF(layer_protocol_val, termination_direction);
+    ATTACH_LEAF(layer_protocol_val, termination_direction);
 
     /*
-     * Attach /network-topology/node/owned-node-edge-point/layer-protocol/layer-protocol-name leaf
+     * Attach /network-topology/node/owned-node-edge-point/layer-protocol/termination-state leaf
      */
-    //ATTACH_LEAF(layer_protocol_val, termination_state);
+    ATTACH_LEAF(layer_protocol_val, termination_state);
 
     /*
      * Attach /network-topology/node/owned-node-edge-point/layer-protocol/extensions container

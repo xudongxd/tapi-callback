@@ -6,7 +6,7 @@
  */
 
 #include "runtime_callbacks.h"
-
+#include "y_tapi-topology.h"
 
 
 static char* cb_get_runtime_network_topology_node_owned_node_edge_point_layer_protocol_layer_protocol_name (val_value_t *element);
@@ -438,7 +438,9 @@ status_t cb_get_all_labels(char *topology_uuid, char **key_list, int *num)
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_owned_node_edge_point_layer_protocol_layer_protocol_name (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("eth");
+    return res;
 }
 
 /********************************************************************
@@ -455,7 +457,9 @@ static char* cb_get_runtime_network_topology_node_owned_node_edge_point_layer_pr
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_owned_node_edge_point_layer_protocol_termination_direction (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("bidirectional");
+    return res;
 }
 
 /********************************************************************
@@ -472,7 +476,9 @@ static char* cb_get_runtime_network_topology_node_owned_node_edge_point_layer_pr
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_owned_node_edge_point_layer_protocol_termination_state (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("lp-can-never-terminate");
+    return res;
 }
 
 /********************************************************************
@@ -523,7 +529,9 @@ static char* cb_get_runtime_network_topology_node_owned_node_edge_point_layer_pr
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_owned_node_edge_point_layer_protocol_name_value (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("axiba");
+    return res;
 }
 
 /********************************************************************
@@ -778,7 +786,9 @@ static char* cb_get_runtime_network_topology_node_aggregated_node_edge_point (va
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_encap_topology (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("topology_default");
+    return res;
 }
 
 /********************************************************************
@@ -1135,7 +1145,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_capacity_ass
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_capacity_assigned_to_user_view_packet_bw_profile_type (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("rfc-2697");
+    return res;
 }
 
 /********************************************************************
@@ -1152,7 +1164,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_capacity_ass
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_capacity_assigned_to_user_view_committed_information_rate (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("10000");
+    return res;
 }
 
 /********************************************************************
@@ -1169,7 +1183,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_capacity_ass
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_capacity_assigned_to_user_view_committed_burst_size (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("10000");
+    return res;
 }
 
 /********************************************************************
@@ -1186,7 +1202,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_capacity_ass
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_capacity_assigned_to_user_view_peak_information_rate (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("10000");
+    return res;
 }
 
 /********************************************************************
@@ -1203,7 +1221,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_capacity_ass
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_capacity_assigned_to_user_view_peak_burst_size (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("10000");
+    return res;
 }
 
 /********************************************************************
@@ -1220,7 +1240,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_capacity_ass
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_capacity_assigned_to_user_view_color_aware (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("false");
+    return res;
 }
 
 /********************************************************************
@@ -1237,7 +1259,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_capacity_ass
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_capacity_assigned_to_user_view_coupling_flag (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("true");
+    return res;
 }
 
 /********************************************************************
@@ -1254,7 +1278,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_capacity_ass
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_capacity_interaction_algorithm (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("node_aaa");
+    return res;
 }
 
 /********************************************************************
@@ -1424,7 +1450,9 @@ static char* cb_get_runtime_network_topology_node_transfer_integrity_server_inte
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_timing_latency_characteristic_fixed_latency_characteristic (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("fixed_latency");
+    return res;
 }
 
 /********************************************************************
@@ -1441,7 +1469,9 @@ static char* cb_get_runtime_network_topology_node_transfer_timing_latency_charac
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_timing_latency_characteristic_jitter_characteristic (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("jitter");
+    return res;
 }
 
 /********************************************************************
@@ -1458,7 +1488,9 @@ static char* cb_get_runtime_network_topology_node_transfer_timing_latency_charac
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_timing_latency_characteristic_wander_characteristic (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("wander");
+    return res;
 }
 
 /********************************************************************
@@ -1560,7 +1592,9 @@ static char* cb_get_runtime_network_topology_node_name_value_name (val_value_t *
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_name_value (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("name_value");
+    return res;
 }
 
 /********************************************************************
@@ -1594,7 +1628,9 @@ static char* cb_get_runtime_network_topology_node_label_value_name (val_value_t 
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_label_value (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("label_value");
+    return res;
 }
 
 /********************************************************************
@@ -1985,7 +2021,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_capacity_ass
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_capacity_assigned_to_user_view_packet_bw_profile_type (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("rfc-2697");
+    return res;
 }
 
 /********************************************************************
@@ -2002,7 +2040,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_capacity_ass
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_capacity_assigned_to_user_view_committed_information_rate (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("10000");
+    return res;
 }
 
 /********************************************************************
@@ -2019,7 +2059,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_capacity_ass
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_capacity_assigned_to_user_view_committed_burst_size (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("1000");
+    return res;
 }
 
 /********************************************************************
@@ -2036,7 +2078,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_capacity_ass
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_capacity_assigned_to_user_view_peak_information_rate (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("100000");
+    return res;
 }
 
 /********************************************************************
@@ -2053,7 +2097,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_capacity_ass
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_capacity_assigned_to_user_view_peak_burst_size (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("2000");
+    return res;
 }
 
 /********************************************************************
@@ -2070,7 +2116,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_capacity_ass
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_capacity_assigned_to_user_view_color_aware (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("true");
+    return res;
 }
 
 /********************************************************************
@@ -2087,7 +2135,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_capacity_ass
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_capacity_assigned_to_user_view_coupling_flag (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("false");
+    return res;
 }
 
 /********************************************************************
@@ -2104,7 +2154,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_capacity_ass
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_capacity_interaction_algorithm (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("link_aaa");
+    return res;
 }
 
 /********************************************************************
@@ -2274,7 +2326,9 @@ static char* cb_get_runtime_network_topology_link_transfer_integrity_server_inte
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_timing_latency_characteristic_fixed_latency_characteristic (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("fixed_latency");
+    return res;
 }
 
 /********************************************************************
@@ -2291,7 +2345,9 @@ static char* cb_get_runtime_network_topology_link_transfer_timing_latency_charac
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_timing_latency_characteristic_jitter_characteristic (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("jitter");
+    return res;
 }
 
 /********************************************************************
@@ -2308,7 +2364,9 @@ static char* cb_get_runtime_network_topology_link_transfer_timing_latency_charac
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_timing_latency_characteristic_wander_characteristic (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("wander");
+    return res;
 }
 
 /********************************************************************
@@ -2495,7 +2553,9 @@ static char* cb_get_runtime_network_topology_link_layer_protocol_name (val_value
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_direction (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("bidirectional");
+    return res;
 }
 
 /********************************************************************
@@ -2546,7 +2606,9 @@ static char* cb_get_runtime_network_topology_link_name_value_name (val_value_t *
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_name_value (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("link_name_value");
+    return res;
 }
 
 /********************************************************************
@@ -2580,7 +2642,9 @@ static char* cb_get_runtime_network_topology_link_label_value_name (val_value_t 
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_label_value (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("link_label_value");
+    return res;
 }
 
 /********************************************************************
@@ -2648,7 +2712,9 @@ static char* cb_get_runtime_network_topology_name_value_name (val_value_t *eleme
 ********************************************************************/
 static char* cb_get_runtime_network_topology_name_value (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("name_value");
+    return res;
 }
 
 /********************************************************************
@@ -2682,5 +2748,304 @@ static char* cb_get_runtime_network_topology_label_value_name (val_value_t *elem
 ********************************************************************/
 static char* cb_get_runtime_network_topology_label_value (val_value_t *element)
 {
+    char *res = NULL;
+    res = strdup("label_value");
+    return res;
+}
 
+
+
+
+
+
+
+char* cb_get_runtime_element_value(val_value_t *element, const char* moduleName)
+{
+    if(!element)
+        return NULL;
+
+	//tapi_topology
+
+	if (strcmp(moduleName, y_tapi_topology_M_tapi_topology) == 0)
+	{
+        if(element->parent && strcmp(element->parent->name, y_tapi_topology_N_network_topology) == 0)
+        {
+            return NULL;
+        }
+        else if(element->parent->parent && strcmp(element->parent->parent->name, y_tapi_topology_N_network_topology) == 0)
+        {
+            //link
+            if(strcmp(element->parent->name, y_tapi_topology_N_link) == 0)
+            {
+                //link/direction
+                if (strcmp(element->name, y_tapi_topology_N_direction) == 0)
+                {
+                    return cb_get_runtime_network_topology_link_direction(element);
+                }
+            }
+            //node
+            if(strcmp(element->parent->name, y_tapi_topology_N_node) == 0)
+            {
+                //node/encap-topology
+                if (strcmp(element->name, y_tapi_topology_N_encap_topology) == 0)
+                {
+                    return cb_get_runtime_network_topology_node_encap_topology(element);
+                }
+            }
+            //name
+            if(strcmp(element->parent->name, y_tapi_topology_N_name) == 0)
+            {
+                //name/value
+                if (strcmp(element->name, y_tapi_topology_N_value) == 0)
+                {
+                    return cb_get_runtime_network_topology_name_value(element);
+                }
+            }
+            //label
+            if(strcmp(element->parent->name, y_tapi_topology_N_label) == 0)
+            {
+                //label/value
+                if (strcmp(element->name, y_tapi_topology_N_value) == 0)
+                {
+                    return cb_get_runtime_network_topology_label_value(element);
+                }
+            }
+            return NULL;
+        }
+        else if(element->parent->parent->parent && strcmp(element->parent->parent->parent->name, y_tapi_topology_N_network_topology) == 0)
+        {
+            //link
+            if(strcmp(element->parent->parent->name, y_tapi_topology_N_link) == 0)
+            {
+                //link/transfer-capacity
+                if (strcmp(element->parent->name, y_tapi_topology_N_transfer_capacity) == 0)
+                {
+                    //link/transfer-capacity/capacity-interaction-algorithm
+                    if (strcmp(element->name, y_tapi_topology_N_capacity_interaction_algorithm) == 0)
+                    {
+                        return cb_get_runtime_network_topology_link_transfer_capacity_capacity_interaction_algorithm(element);
+                    }
+                }
+                //link/name
+                if(strcmp(element->parent->name, y_tapi_topology_N_name) == 0)
+                {
+                    //link/name/value
+                    if (strcmp(element->name, y_tapi_topology_N_value) == 0)
+                    {
+                        return cb_get_runtime_network_topology_link_name_value(element);
+                    }
+                }
+                //link/label
+                if(strcmp(element->parent->name, y_tapi_topology_N_label) == 0)
+                {
+                    //link/label/value
+                    if (strcmp(element->name, y_tapi_topology_N_value) == 0)
+                    {
+                        return cb_get_runtime_network_topology_link_label_value(element);
+                    }
+                }
+            }
+            //node
+            if(strcmp(element->parent->parent->name, y_tapi_topology_N_node) == 0)
+            {
+                //node/transfer-capacity
+                if (strcmp(element->parent->name, y_tapi_topology_N_transfer_capacity) == 0)
+                {
+                    //node/transfer-capacity/capacity-interaction-algorithm
+                    if (strcmp(element->name, y_tapi_topology_N_capacity_interaction_algorithm) == 0)
+                    {
+                        return cb_get_runtime_network_topology_node_transfer_capacity_capacity_interaction_algorithm(element);
+                    }
+                }
+                //node/name
+                if(strcmp(element->parent->name, y_tapi_topology_N_name) == 0)
+                {
+                    //node/name/value
+                    if (strcmp(element->name, y_tapi_topology_N_value) == 0)
+                    {
+                        return cb_get_runtime_network_topology_node_name_value(element);
+                    }
+                }
+                //node/label
+                if(strcmp(element->parent->name, y_tapi_topology_N_label) == 0)
+                {
+                    //node/label/value
+                    if (strcmp(element->name, y_tapi_topology_N_value) == 0)
+                    {
+                        return cb_get_runtime_network_topology_node_label_value(element);
+                    }
+                }
+            }
+            return NULL;
+        }
+        else if(element->parent->parent->parent->parent && strcmp(element->parent->parent->parent->parent->name, y_tapi_topology_N_network_topology) == 0)
+        {
+            //link
+            if(strcmp(element->parent->parent->parent->name, y_tapi_topology_N_link) == 0)
+            {
+                //link/transfer-capacity
+                if (strcmp(element->parent->parent->name, y_tapi_topology_N_transfer_capacity) == 0)
+                {
+                    //link/transfer-capacity/capacity-assigned-to-user-view
+                    if (strcmp(element->parent->name, y_tapi_topology_N_capacity_assigned_to_user_view) == 0)
+                    {
+                        if (strcmp(element->name, y_tapi_topology_N_packet_bw_profile_type) == 0)
+                        {
+                            return cb_get_runtime_network_topology_link_transfer_capacity_capacity_assigned_to_user_view_packet_bw_profile_type(element);
+                        }
+                        if (strcmp(element->name, y_tapi_topology_N_committed_information_rate) == 0)
+                        {
+                            return cb_get_runtime_network_topology_link_transfer_capacity_capacity_assigned_to_user_view_committed_information_rate(element);
+                        }
+                        if (strcmp(element->name, y_tapi_topology_N_committed_burst_size) == 0)
+                        {
+                            return cb_get_runtime_network_topology_link_transfer_capacity_capacity_assigned_to_user_view_committed_burst_size(element);
+                        }
+                        if (strcmp(element->name, y_tapi_topology_N_peak_information_rate) == 0)
+                        {
+                            return cb_get_runtime_network_topology_link_transfer_capacity_capacity_assigned_to_user_view_peak_information_rate(element);
+                        }
+                        if (strcmp(element->name, y_tapi_topology_N_peak_burst_size) == 0)
+                        {
+                            return cb_get_runtime_network_topology_link_transfer_capacity_capacity_assigned_to_user_view_peak_burst_size(element);
+                        }
+                        if (strcmp(element->name, y_tapi_topology_N_color_aware) == 0)
+                        {
+                            return cb_get_runtime_network_topology_link_transfer_capacity_capacity_assigned_to_user_view_color_aware(element);
+                        }
+                        if (strcmp(element->name, y_tapi_topology_N_coupling_flag) == 0)
+                        {
+                            return cb_get_runtime_network_topology_link_transfer_capacity_capacity_assigned_to_user_view_coupling_flag(element);
+                        }
+                    }
+                }
+                //link/transfer-timing
+                if (strcmp(element->parent->parent->name, y_tapi_topology_N_transfer_timing) == 0)
+                {
+                    //link/transfer-timing/latency-characteristic
+                    if (strcmp(element->parent->name, y_tapi_topology_N_latency_characteristic) == 0)
+                    {
+                        if (strcmp(element->name, y_tapi_topology_N_fixed_latency_characteristic) == 0)
+                        {
+                            return cb_get_runtime_network_topology_link_transfer_timing_latency_characteristic_fixed_latency_characteristic(element);
+                        }
+                        if (strcmp(element->name, y_tapi_topology_N_jitter_characteristic) == 0)
+                        {
+                            return cb_get_runtime_network_topology_link_transfer_timing_latency_characteristic_jitter_characteristic(element);
+                        }
+                        if (strcmp(element->name, y_tapi_topology_N_wander_characteristic) == 0)
+                        {
+                            return cb_get_runtime_network_topology_link_transfer_timing_latency_characteristic_wander_characteristic(element);
+                        }
+                    }
+                }
+            }
+            //node
+            if(strcmp(element->parent->parent->parent->name, y_tapi_topology_N_node) == 0)
+            {
+                //node/transfer-capacity
+                if (strcmp(element->parent->parent->name, y_tapi_topology_N_transfer_capacity) == 0)
+                {
+                    //node/transfer-capacity/capacity-assigned-to-user-view
+                    if (strcmp(element->parent->name, y_tapi_topology_N_capacity_assigned_to_user_view) == 0)
+                    {
+                        if (strcmp(element->name, y_tapi_topology_N_packet_bw_profile_type) == 0)
+                        {
+                            return cb_get_runtime_network_topology_node_transfer_capacity_capacity_assigned_to_user_view_packet_bw_profile_type(element);
+                        }
+                        if (strcmp(element->name, y_tapi_topology_N_committed_information_rate) == 0)
+                        {
+                            return cb_get_runtime_network_topology_node_transfer_capacity_capacity_assigned_to_user_view_committed_information_rate(element);
+                        }
+                        if (strcmp(element->name, y_tapi_topology_N_committed_burst_size) == 0)
+                        {
+                            return cb_get_runtime_network_topology_node_transfer_capacity_capacity_assigned_to_user_view_committed_burst_size(element);
+                        }
+                        if (strcmp(element->name, y_tapi_topology_N_peak_information_rate) == 0)
+                        {
+                            return cb_get_runtime_network_topology_node_transfer_capacity_capacity_assigned_to_user_view_peak_information_rate(element);
+                        }
+                        if (strcmp(element->name, y_tapi_topology_N_peak_burst_size) == 0)
+                        {
+                            return cb_get_runtime_network_topology_node_transfer_capacity_capacity_assigned_to_user_view_peak_burst_size(element);
+                        }
+                        if (strcmp(element->name, y_tapi_topology_N_color_aware) == 0)
+                        {
+                            return cb_get_runtime_network_topology_node_transfer_capacity_capacity_assigned_to_user_view_color_aware(element);
+                        }
+                        if (strcmp(element->name, y_tapi_topology_N_coupling_flag) == 0)
+                        {
+                            return cb_get_runtime_network_topology_node_transfer_capacity_capacity_assigned_to_user_view_coupling_flag(element);
+                        }
+                    }
+                }
+                //node/transfer-timing
+                if (strcmp(element->parent->parent->name, y_tapi_topology_N_transfer_timing) == 0)
+                {
+                    //node/transfer-timing/latency-characteristic
+                    if (strcmp(element->parent->name, y_tapi_topology_N_latency_characteristic) == 0)
+                    {
+                        if (strcmp(element->name, y_tapi_topology_N_fixed_latency_characteristic) == 0)
+                        {
+                            return cb_get_runtime_network_topology_node_transfer_timing_latency_characteristic_fixed_latency_characteristic(element);
+                        }
+                        if (strcmp(element->name, y_tapi_topology_N_jitter_characteristic) == 0)
+                        {
+                            return cb_get_runtime_network_topology_node_transfer_timing_latency_characteristic_jitter_characteristic(element);
+                        }
+                        if (strcmp(element->name, y_tapi_topology_N_wander_characteristic) == 0)
+                        {
+                            return cb_get_runtime_network_topology_node_transfer_timing_latency_characteristic_wander_characteristic(element);
+                        }
+                    }
+                }
+                //node/owned-node-edge-point
+                if (strcmp(element->parent->parent->name, y_tapi_topology_N_owned_node_edge_point) == 0)
+                {
+                    //node/owned-node-edge-point/layer-protocol
+                    if (strcmp(element->parent->name, y_tapi_topology_N_layer_protocol) == 0)
+                    {
+                        if (strcmp(element->name, y_tapi_topology_N_layer_protocol_name) == 0)
+                        {
+                            return cb_get_runtime_network_topology_node_owned_node_edge_point_layer_protocol_layer_protocol_name(element);
+                        }
+                        if (strcmp(element->name, y_tapi_topology_N_termination_direction) == 0)
+                        {
+                            return cb_get_runtime_network_topology_node_owned_node_edge_point_layer_protocol_termination_direction(element);
+                        }
+                        if (strcmp(element->name, y_tapi_topology_N_termination_state) == 0)
+                        {
+                            return cb_get_runtime_network_topology_node_owned_node_edge_point_layer_protocol_termination_state(element);
+                        }
+                    }
+                }
+            }
+            return NULL;
+        }
+        else if(element->parent->parent->parent->parent->parent && strcmp(element->parent->parent->parent->parent->parent->name, y_tapi_topology_N_network_topology) == 0)
+        {
+            //node
+            if(strcmp(element->parent->parent->parent->parent->name, y_tapi_topology_N_node) == 0)
+            {
+                //node/owned-node-edge-point
+                if (strcmp(element->parent->parent->parent->name, y_tapi_topology_N_owned_node_edge_point) == 0)
+                {
+                    //node/owned-node-edge-point/layer-protocol
+                    if (strcmp(element->parent->parent->name, y_tapi_topology_N_layer_protocol) == 0)
+                    {
+                        //node/owned-node-edge-point/layer-protocol/name
+                        if (strcmp(element->parent->name, y_tapi_topology_N_name) == 0)
+                        {
+                            if (strcmp(element->name, y_tapi_topology_N_value) == 0)
+                            {
+                                return cb_get_runtime_network_topology_node_owned_node_edge_point_layer_protocol_name_value(element);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    return NULL;
 }

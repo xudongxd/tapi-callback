@@ -7,6 +7,7 @@
  */
 
 #include "utils.h"
+#include "runtime_callbacks.h"
 
 
 status_t create_root_element(const char *module_name, const char *revision, const char *element_name, val_value_t** created_element_val)
@@ -46,7 +47,7 @@ static status_t init_element_with_value(obj_template_t *curr_obj, val_value_t **
     else
     {
         //char* elementStringValue = (is_runtime) ? cb_get_runtime_element_value(*curr_val, module_name) : cb_get_boot_time_element_value(*curr_val, module_name);
-        char* elementStringValue = NULL;
+        char* elementStringValue = cb_get_runtime_element_value(*curr_val, module_name);
 
         if (elementStringValue == NULL) //no callback implemented for this element, just use the default value
         {

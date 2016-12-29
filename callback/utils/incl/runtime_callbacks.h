@@ -53,4 +53,8 @@ status_t cb_get_all_names(char *topology_uuid, char **key_list, int *num);
 
 status_t cb_get_all_labels(char *topology_uuid, char **key_list, int *num);
 
+
+
+char* cb_get_runtime_element_value(val_value_t *element, const char* moduleName);
+
 #endif /* RUNTIME_CALLBACKS_H_ */
