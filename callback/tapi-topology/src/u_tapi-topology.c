@@ -429,11 +429,7 @@ status_t u_tapi_topology_network_topology_node_owned_node_edge_point_state_admin
 
 
     /* set the administrative_state var here, change enum */
-    administrative_state = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        administrative_state);
+    CB_SET_RUNTIME_VALUE(node_owned_node_edge_point_state, &dstval, res);
 
     return res;
 
@@ -467,11 +463,7 @@ status_t u_tapi_topology_network_topology_node_owned_node_edge_point_state_opera
 
 
     /* set the operational_state var here, change enum */
-    operational_state = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        operational_state);
+    CB_SET_RUNTIME_VALUE(node_owned_node_edge_point_state, &dstval, res);
 
     return res;
 
@@ -505,11 +497,7 @@ status_t u_tapi_topology_network_topology_node_owned_node_edge_point_state_lifec
 
 
     /* set the lifecycle_state var here, change enum */
-    lifecycle_state = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        lifecycle_state);
+    CB_SET_RUNTIME_VALUE(node_owned_node_edge_point_state, &dstval, res);
 
     return res;
 
@@ -924,11 +912,7 @@ status_t u_tapi_topology_network_topology_node_state_administrative_state_get (
 
 
     /* set the administrative_state var here, change enum */
-    administrative_state = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        administrative_state);
+    CB_SET_RUNTIME_VALUE(node_state, &dstval, res);
 
     return res;
 
@@ -961,11 +945,7 @@ status_t u_tapi_topology_network_topology_node_state_operational_state_get (
 
 
     /* set the operational_state var here, change enum */
-    operational_state = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        operational_state);
+    CB_SET_RUNTIME_VALUE(node_state, &dstval, res);
 
     return res;
 
@@ -998,11 +978,7 @@ status_t u_tapi_topology_network_topology_node_state_lifecycle_state_get (
 
 
     /* set the lifecycle_state var here, change enum */
-    lifecycle_state = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        lifecycle_state);
+    CB_SET_RUNTIME_VALUE(node_state, &dstval, res);
 
     return res;
 
@@ -1035,11 +1011,7 @@ status_t u_tapi_topology_network_topology_node_transfer_capacity_total_potential
 
 
     /* set the total_size var here, change enum */
-    total_size = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        total_size);
+    CB_SET_RUNTIME_VALUE(node_transfer_capacity_total_potential_capacity, &dstval, res);
 
     return res;
 
@@ -1072,11 +1044,7 @@ status_t u_tapi_topology_network_topology_node_transfer_capacity_total_potential
 
 
     /* set the packet_bw_profile_type var here, change enum */
-    packet_bw_profile_type = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        packet_bw_profile_type);
+    CB_SET_RUNTIME_VALUE(node_transfer_capacity_total_potential_capacity, &dstval, res);
 
     return res;
 
@@ -1109,8 +1077,7 @@ status_t u_tapi_topology_network_topology_node_transfer_capacity_total_potential
 
 
     /* set the committed_information_rate var here, change zero */
-    committed_information_rate = 0;
-    VAL_ULONG(dstval) = committed_information_rate;
+    CB_SET_RUNTIME_VALUE(node_transfer_capacity_total_potential_capacity, &dstval, res);
 
     return res;
 
@@ -1143,8 +1110,7 @@ status_t u_tapi_topology_network_topology_node_transfer_capacity_total_potential
 
 
     /* set the committed_burst_size var here, change zero */
-    committed_burst_size = 0;
-    VAL_ULONG(dstval) = committed_burst_size;
+    CB_SET_RUNTIME_VALUE(node_transfer_capacity_total_potential_capacity, &dstval, res);
 
     return res;
 
@@ -1177,8 +1143,7 @@ status_t u_tapi_topology_network_topology_node_transfer_capacity_total_potential
 
 
     /* set the peak_information_rate var here, change zero */
-    peak_information_rate = 0;
-    VAL_ULONG(dstval) = peak_information_rate;
+    CB_SET_RUNTIME_VALUE(node_transfer_capacity_total_potential_capacity, &dstval, res);
 
     return res;
 
@@ -1211,8 +1176,7 @@ status_t u_tapi_topology_network_topology_node_transfer_capacity_total_potential
 
 
     /* set the peak_burst_size var here, change zero */
-    peak_burst_size = 0;
-    VAL_ULONG(dstval) = peak_burst_size;
+    CB_SET_RUNTIME_VALUE(node_transfer_capacity_total_potential_capacity, &dstval, res);
 
     return res;
 
@@ -1245,7 +1209,7 @@ status_t u_tapi_topology_network_topology_node_transfer_capacity_total_potential
 
 
     /* set the color_aware var here, change TRUE if needed */
-    color_aware = TRUE;VAL_BOOL(dstval) = color_aware;
+    CB_SET_RUNTIME_VALUE(node_transfer_capacity_total_potential_capacity, &dstval, res);
 
     return res;
 
@@ -1278,7 +1242,7 @@ status_t u_tapi_topology_network_topology_node_transfer_capacity_total_potential
 
 
     /* set the coupling_flag var here, change TRUE if needed */
-    coupling_flag = TRUE;VAL_BOOL(dstval) = coupling_flag;
+    CB_SET_RUNTIME_VALUE(node_transfer_capacity_total_potential_capacity, &dstval, res);
 
     return res;
 
@@ -1311,11 +1275,7 @@ status_t u_tapi_topology_network_topology_node_transfer_capacity_available_capac
 
 
     /* set the total_size var here, change enum */
-    total_size = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        total_size);
+    CB_SET_RUNTIME_VALUE(node_transfer_capacity_available_capacity, &dstval, res);
 
     return res;
 
@@ -1348,11 +1308,7 @@ status_t u_tapi_topology_network_topology_node_transfer_capacity_available_capac
 
 
     /* set the packet_bw_profile_type var here, change enum */
-    packet_bw_profile_type = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        packet_bw_profile_type);
+    CB_SET_RUNTIME_VALUE(node_transfer_capacity_available_capacity, &dstval, res);
 
     return res;
 
@@ -1385,8 +1341,7 @@ status_t u_tapi_topology_network_topology_node_transfer_capacity_available_capac
 
 
     /* set the committed_information_rate var here, change zero */
-    committed_information_rate = 0;
-    VAL_ULONG(dstval) = committed_information_rate;
+    CB_SET_RUNTIME_VALUE(node_transfer_capacity_available_capacity, &dstval, res);
 
     return res;
 
@@ -1419,8 +1374,7 @@ status_t u_tapi_topology_network_topology_node_transfer_capacity_available_capac
 
 
     /* set the committed_burst_size var here, change zero */
-    committed_burst_size = 0;
-    VAL_ULONG(dstval) = committed_burst_size;
+    CB_SET_RUNTIME_VALUE(node_transfer_capacity_available_capacity, &dstval, res);
 
     return res;
 
@@ -1453,8 +1407,7 @@ status_t u_tapi_topology_network_topology_node_transfer_capacity_available_capac
 
 
     /* set the peak_information_rate var here, change zero */
-    peak_information_rate = 0;
-    VAL_ULONG(dstval) = peak_information_rate;
+    CB_SET_RUNTIME_VALUE(node_transfer_capacity_available_capacity, &dstval, res);
 
     return res;
 
@@ -1487,8 +1440,7 @@ status_t u_tapi_topology_network_topology_node_transfer_capacity_available_capac
 
 
     /* set the peak_burst_size var here, change zero */
-    peak_burst_size = 0;
-    VAL_ULONG(dstval) = peak_burst_size;
+    CB_SET_RUNTIME_VALUE(node_transfer_capacity_available_capacity, &dstval, res);
 
     return res;
 
@@ -1521,7 +1473,7 @@ status_t u_tapi_topology_network_topology_node_transfer_capacity_available_capac
 
 
     /* set the color_aware var here, change TRUE if needed */
-    color_aware = TRUE;VAL_BOOL(dstval) = color_aware;
+    CB_SET_RUNTIME_VALUE(node_transfer_capacity_available_capacity, &dstval, res);
 
     return res;
 
@@ -1554,7 +1506,7 @@ status_t u_tapi_topology_network_topology_node_transfer_capacity_available_capac
 
 
     /* set the coupling_flag var here, change TRUE if needed */
-    coupling_flag = TRUE;VAL_BOOL(dstval) = coupling_flag;
+    CB_SET_RUNTIME_VALUE(node_transfer_capacity_available_capacity, &dstval, res);
 
     return res;
 
@@ -2028,11 +1980,7 @@ status_t u_tapi_topology_network_topology_node_transfer_integrity_error_characte
 
 
     /* set the error_characteristic var here, change EMPTY_STRING */
-    error_characteristic = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        error_characteristic);
+    CB_SET_RUNTIME_VALUE(node_transfer_integrity, &dstval, res);
 
     return res;
 
@@ -2065,11 +2013,7 @@ status_t u_tapi_topology_network_topology_node_transfer_integrity_loss_character
 
 
     /* set the loss_characteristic var here, change EMPTY_STRING */
-    loss_characteristic = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        loss_characteristic);
+    CB_SET_RUNTIME_VALUE(node_transfer_integrity, &dstval, res);
 
     return res;
 
@@ -2102,11 +2046,7 @@ status_t u_tapi_topology_network_topology_node_transfer_integrity_repeat_deliver
 
 
     /* set the repeat_delivery_characteristic var here, change EMPTY_STRING */
-    repeat_delivery_characteristic = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        repeat_delivery_characteristic);
+    CB_SET_RUNTIME_VALUE(node_transfer_integrity, &dstval, res);
 
     return res;
 
@@ -2139,11 +2079,7 @@ status_t u_tapi_topology_network_topology_node_transfer_integrity_delivery_order
 
 
     /* set the delivery_order_characteristic var here, change EMPTY_STRING */
-    delivery_order_characteristic = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        delivery_order_characteristic);
+    CB_SET_RUNTIME_VALUE(node_transfer_integrity, &dstval, res);
 
     return res;
 
@@ -2176,11 +2112,7 @@ status_t u_tapi_topology_network_topology_node_transfer_integrity_unavailable_ti
 
 
     /* set the unavailable_time_characteristic var here, change EMPTY_STRING */
-    unavailable_time_characteristic = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        unavailable_time_characteristic);
+    CB_SET_RUNTIME_VALUE(node_transfer_integrity, &dstval, res);
 
     return res;
 
@@ -2213,11 +2145,7 @@ status_t u_tapi_topology_network_topology_node_transfer_integrity_server_integri
 
 
     /* set the server_integrity_process_characteristic var here, change EMPTY_STRING */
-    server_integrity_process_characteristic = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        server_integrity_process_characteristic);
+    CB_SET_RUNTIME_VALUE(node_transfer_integrity, &dstval, res);
 
     return res;
 
@@ -2745,11 +2673,7 @@ status_t u_tapi_topology_network_topology_link_state_administrative_state_get (
 
 
     /* set the administrative_state var here, change enum */
-    administrative_state = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        administrative_state);
+    CB_SET_RUNTIME_VALUE(link_state, &dstval, res);
 
     return res;
 
@@ -2782,11 +2706,7 @@ status_t u_tapi_topology_network_topology_link_state_operational_state_get (
 
 
     /* set the operational_state var here, change enum */
-    operational_state = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        operational_state);
+    CB_SET_RUNTIME_VALUE(link_state, &dstval, res);
 
     return res;
 
@@ -2819,11 +2739,7 @@ status_t u_tapi_topology_network_topology_link_state_lifecycle_state_get (
 
 
     /* set the lifecycle_state var here, change enum */
-    lifecycle_state = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        lifecycle_state);
+    CB_SET_RUNTIME_VALUE(link_state, &dstval, res);
 
     return res;
 
@@ -2856,11 +2772,7 @@ status_t u_tapi_topology_network_topology_link_transfer_capacity_total_potential
 
 
     /* set the total_size var here, change enum */
-    total_size = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        total_size);
+    CB_SET_RUNTIME_VALUE(link_transfer_capacity_total_potential_capacity, &dstval, res);
 
     return res;
 
@@ -2893,11 +2805,7 @@ status_t u_tapi_topology_network_topology_link_transfer_capacity_total_potential
 
 
     /* set the packet_bw_profile_type var here, change enum */
-    packet_bw_profile_type = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        packet_bw_profile_type);
+    CB_SET_RUNTIME_VALUE(link_transfer_capacity_total_potential_capacity, &dstval, res);
 
     return res;
 
@@ -2930,8 +2838,7 @@ status_t u_tapi_topology_network_topology_link_transfer_capacity_total_potential
 
 
     /* set the committed_information_rate var here, change zero */
-    committed_information_rate = 0;
-    VAL_ULONG(dstval) = committed_information_rate;
+    CB_SET_RUNTIME_VALUE(link_transfer_capacity_total_potential_capacity, &dstval, res);
 
     return res;
 
@@ -2964,8 +2871,7 @@ status_t u_tapi_topology_network_topology_link_transfer_capacity_total_potential
 
 
     /* set the committed_burst_size var here, change zero */
-    committed_burst_size = 0;
-    VAL_ULONG(dstval) = committed_burst_size;
+    CB_SET_RUNTIME_VALUE(link_transfer_capacity_total_potential_capacity, &dstval, res);
 
     return res;
 
@@ -2998,8 +2904,7 @@ status_t u_tapi_topology_network_topology_link_transfer_capacity_total_potential
 
 
     /* set the peak_information_rate var here, change zero */
-    peak_information_rate = 0;
-    VAL_ULONG(dstval) = peak_information_rate;
+    CB_SET_RUNTIME_VALUE(link_transfer_capacity_total_potential_capacity, &dstval, res);
 
     return res;
 
@@ -3032,8 +2937,7 @@ status_t u_tapi_topology_network_topology_link_transfer_capacity_total_potential
 
 
     /* set the peak_burst_size var here, change zero */
-    peak_burst_size = 0;
-    VAL_ULONG(dstval) = peak_burst_size;
+    CB_SET_RUNTIME_VALUE(link_transfer_capacity_total_potential_capacity, &dstval, res);
 
     return res;
 
@@ -3066,7 +2970,7 @@ status_t u_tapi_topology_network_topology_link_transfer_capacity_total_potential
 
 
     /* set the color_aware var here, change TRUE if needed */
-    color_aware = TRUE;VAL_BOOL(dstval) = color_aware;
+    CB_SET_RUNTIME_VALUE(link_transfer_capacity_total_potential_capacity, &dstval, res);
 
     return res;
 
@@ -3099,7 +3003,7 @@ status_t u_tapi_topology_network_topology_link_transfer_capacity_total_potential
 
 
     /* set the coupling_flag var here, change TRUE if needed */
-    coupling_flag = TRUE;VAL_BOOL(dstval) = coupling_flag;
+    CB_SET_RUNTIME_VALUE(link_transfer_capacity_total_potential_capacity, &dstval, res);
 
     return res;
 
@@ -3132,11 +3036,7 @@ status_t u_tapi_topology_network_topology_link_transfer_capacity_available_capac
 
 
     /* set the total_size var here, change enum */
-    total_size = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        total_size);
+    CB_SET_RUNTIME_VALUE(link_transfer_capacity_available_capacity, &dstval, res);
 
     return res;
 
@@ -3169,11 +3069,7 @@ status_t u_tapi_topology_network_topology_link_transfer_capacity_available_capac
 
 
     /* set the packet_bw_profile_type var here, change enum */
-    packet_bw_profile_type = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        packet_bw_profile_type);
+    CB_SET_RUNTIME_VALUE(link_transfer_capacity_available_capacity, &dstval, res);
 
     return res;
 
@@ -3206,8 +3102,7 @@ status_t u_tapi_topology_network_topology_link_transfer_capacity_available_capac
 
 
     /* set the committed_information_rate var here, change zero */
-    committed_information_rate = 0;
-    VAL_ULONG(dstval) = committed_information_rate;
+    CB_SET_RUNTIME_VALUE(link_transfer_capacity_available_capacity, &dstval, res);
 
     return res;
 
@@ -3240,8 +3135,7 @@ status_t u_tapi_topology_network_topology_link_transfer_capacity_available_capac
 
 
     /* set the committed_burst_size var here, change zero */
-    committed_burst_size = 0;
-    VAL_ULONG(dstval) = committed_burst_size;
+    CB_SET_RUNTIME_VALUE(link_transfer_capacity_available_capacity, &dstval, res);
 
     return res;
 
@@ -3274,8 +3168,7 @@ status_t u_tapi_topology_network_topology_link_transfer_capacity_available_capac
 
 
     /* set the peak_information_rate var here, change zero */
-    peak_information_rate = 0;
-    VAL_ULONG(dstval) = peak_information_rate;
+    CB_SET_RUNTIME_VALUE(link_transfer_capacity_available_capacity, &dstval, res);
 
     return res;
 
@@ -3308,8 +3201,7 @@ status_t u_tapi_topology_network_topology_link_transfer_capacity_available_capac
 
 
     /* set the peak_burst_size var here, change zero */
-    peak_burst_size = 0;
-    VAL_ULONG(dstval) = peak_burst_size;
+    CB_SET_RUNTIME_VALUE(link_transfer_capacity_available_capacity, &dstval, res);
 
     return res;
 
@@ -3342,7 +3234,7 @@ status_t u_tapi_topology_network_topology_link_transfer_capacity_available_capac
 
 
     /* set the color_aware var here, change TRUE if needed */
-    color_aware = TRUE;VAL_BOOL(dstval) = color_aware;
+    CB_SET_RUNTIME_VALUE(link_transfer_capacity_available_capacity, &dstval, res);
 
     return res;
 
@@ -3375,7 +3267,7 @@ status_t u_tapi_topology_network_topology_link_transfer_capacity_available_capac
 
 
     /* set the coupling_flag var here, change TRUE if needed */
-    coupling_flag = TRUE;VAL_BOOL(dstval) = coupling_flag;
+    CB_SET_RUNTIME_VALUE(link_transfer_capacity_available_capacity, &dstval, res);
 
     return res;
 
@@ -3849,11 +3741,7 @@ status_t u_tapi_topology_network_topology_link_transfer_integrity_error_characte
 
 
     /* set the error_characteristic var here, change EMPTY_STRING */
-    error_characteristic = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        error_characteristic);
+    CB_SET_RUNTIME_VALUE(link_transfer_integrity, &dstval, res);
 
     return res;
 
@@ -3886,11 +3774,7 @@ status_t u_tapi_topology_network_topology_link_transfer_integrity_loss_character
 
 
     /* set the loss_characteristic var here, change EMPTY_STRING */
-    loss_characteristic = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        loss_characteristic);
+    CB_SET_RUNTIME_VALUE(link_transfer_integrity, &dstval, res);
 
     return res;
 
@@ -3923,11 +3807,7 @@ status_t u_tapi_topology_network_topology_link_transfer_integrity_repeat_deliver
 
 
     /* set the repeat_delivery_characteristic var here, change EMPTY_STRING */
-    repeat_delivery_characteristic = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        repeat_delivery_characteristic);
+    CB_SET_RUNTIME_VALUE(link_transfer_integrity, &dstval, res);
 
     return res;
 
@@ -3960,11 +3840,7 @@ status_t u_tapi_topology_network_topology_link_transfer_integrity_delivery_order
 
 
     /* set the delivery_order_characteristic var here, change EMPTY_STRING */
-    delivery_order_characteristic = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        delivery_order_characteristic);
+    CB_SET_RUNTIME_VALUE(link_transfer_integrity, &dstval, res);
 
     return res;
 
@@ -3997,11 +3873,7 @@ status_t u_tapi_topology_network_topology_link_transfer_integrity_unavailable_ti
 
 
     /* set the unavailable_time_characteristic var here, change EMPTY_STRING */
-    unavailable_time_characteristic = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        unavailable_time_characteristic);
+    CB_SET_RUNTIME_VALUE(link_transfer_integrity, &dstval, res);
 
     return res;
 
@@ -4034,12 +3906,7 @@ status_t u_tapi_topology_network_topology_link_transfer_integrity_server_integri
 
 
     /* set the server_integrity_process_characteristic var here, change EMPTY_STRING */
-    server_integrity_process_characteristic = EMPTY_STRING;
-    res = val_set_simval_obj(
-        dstval,
-        dstval->obj,
-        server_integrity_process_characteristic);
-
+    CB_SET_RUNTIME_VALUE(link_transfer_integrity, &dstval, res);
     return res;
 
 } /* u_tapi_topology_network_topology_link_transfer_integrity_server_integrity_process_characteristic_get */
@@ -6728,6 +6595,21 @@ static status_t attach_node_owned_node_edge_point_list(val_value_t *parent_val, 
 
     res = tapi_topology_network_topology_node_owned_node_edge_point_state_mro(state_val);
     YUMA_ASSERT(res != NO_ERR, return ERR_INTERNAL_VAL , "tapi_topology_network_topology_node_owned_node_edge_point_state_mro failed ");
+
+    /*
+     * Attach /network-topology/node/owned-node-edge-point/termination-direction leaf 
+     */
+    ATTACH_LEAF(owned_node_edge_point_val, termination_direction);
+
+    /*
+     * Attach /network-topology/node/owned-node-edge-point/link-port-direction leaf 
+     */
+    ATTACH_LEAF(owned_node_edge_point_val, link_port_direction);
+
+    /*
+     * Attach /network-topology/node/owned-node-edge-point/link-port-role leaf 
+     */
+    ATTACH_LEAF(owned_node_edge_point_val, link_port_role);
 
     return NO_ERR;
 }

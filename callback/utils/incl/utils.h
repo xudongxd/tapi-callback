@@ -57,5 +57,27 @@ status_t add_virtual_leaf(val_value_t *parentVal, const char *elementName, getcb
 })
 
 
+#define CB_GET_RUNTIME_VALUE(name) cb_get_runtime_##name##_value
+
+#define CB_SET_RUNTIME_VALUE(element_name, element, res) \
+({ \
+    int need_free = TRUE; \
+    YUMA_ASSERT(NULL == (*element), return ERR_INTERNAL_VAL, "NULL element received"); \
+\
+    char* elementStringValue = CB_GET_RUNTIME_VALUE(element_name)(*element); \
+    if (elementStringValue == NULL) \
+    { \
+        elementStringValue = obj_get_default((*element)->obj); \
+        need_free = FALSE; \
+    } \
+    else \
+    { \
+        res = val_set_simval_obj(*element, (*element)->obj, elementStringValue); \
+        YUMA_ASSERT(res != NO_ERR, return ERR_INTERNAL_VAL, "val_set_simval_obj %s failed!", (*element)->name); \
+\
+        if (need_free) \
+            free(elementStringValue); \
+    } \
+})
 
 #endif /* COMMON_H_ */

@@ -57,4 +57,14 @@ status_t cb_get_all_labels(char *topology_uuid, char **key_list, int *num);
 
 char* cb_get_runtime_element_value(val_value_t *element, const char* moduleName);
 
+char* cb_get_runtime_node_state_value(val_value_t *element);
+char* cb_get_runtime_node_transfer_integrity_value(val_value_t *element);
+char* cb_get_runtime_node_owned_node_edge_point_state_value(val_value_t *element);
+char* cb_get_runtime_node_transfer_capacity_total_potential_capacity_value(val_value_t *element);
+char* cb_get_runtime_node_transfer_capacity_available_capacity_value(val_value_t *element);
+char* cb_get_runtime_link_state_value(val_value_t *element);
+char* cb_get_runtime_link_transfer_integrity_value(val_value_t *element);
+char* cb_get_runtime_link_transfer_capacity_total_potential_capacity_value(val_value_t *element);
+char* cb_get_runtime_link_transfer_capacity_available_capacity_value(val_value_t *element);
+
 #endif /* RUNTIME_CALLBACKS_H_ */

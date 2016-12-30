@@ -582,7 +582,9 @@ static char* cb_get_runtime_network_topology_node_owned_node_edge_point_mapped_s
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_owned_node_edge_point_state_administrative_state (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("locked");
+    return res;
 }
 
 /********************************************************************
@@ -599,6 +601,9 @@ static char* cb_get_runtime_network_topology_node_owned_node_edge_point_state_ad
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_owned_node_edge_point_state_operational_state (val_value_t *element)
 {
+    char *res = NULL;
+    res = strdup("disabled");
+    return res;
 
 }
 
@@ -616,7 +621,9 @@ static char* cb_get_runtime_network_topology_node_owned_node_edge_point_state_op
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_owned_node_edge_point_state_lifecycle_state (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("installed");
+    return res;
 }
 
 /********************************************************************
@@ -633,7 +640,9 @@ static char* cb_get_runtime_network_topology_node_owned_node_edge_point_state_li
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_owned_node_edge_point_termination_direction (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("bidirectional");
+    return res;
 }
 
 /********************************************************************
@@ -650,7 +659,9 @@ static char* cb_get_runtime_network_topology_node_owned_node_edge_point_terminat
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_owned_node_edge_point_link_port_direction (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("unidentified-or-unknown");
+    return res;
 }
 
 /********************************************************************
@@ -667,7 +678,9 @@ static char* cb_get_runtime_network_topology_node_owned_node_edge_point_link_por
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_owned_node_edge_point_link_port_role (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("leaf");
+    return res;
 }
 
 /********************************************************************
@@ -805,7 +818,9 @@ static char* cb_get_runtime_network_topology_node_encap_topology (val_value_t *e
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_state_administrative_state (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("locked");
+    return res;
 }
 
 /********************************************************************
@@ -822,7 +837,9 @@ static char* cb_get_runtime_network_topology_node_state_administrative_state (va
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_state_operational_state (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("disabled");
+    return res;
 }
 
 /********************************************************************
@@ -839,7 +856,9 @@ static char* cb_get_runtime_network_topology_node_state_operational_state (val_v
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_state_lifecycle_state (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("installed");
+    return res;
 }
 
 /********************************************************************
@@ -856,7 +875,9 @@ static char* cb_get_runtime_network_topology_node_state_lifecycle_state (val_val
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_total_potential_capacity_total_size (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("100mbps");
+    return res;
 }
 
 /********************************************************************
@@ -873,7 +894,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_total_potent
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_total_potential_capacity_packet_bw_profile_type (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("mef-10.x");
+    return res;
 }
 
 /********************************************************************
@@ -890,7 +913,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_total_potent
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_total_potential_capacity_committed_information_rate (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("1000");
+    return res;
 }
 
 /********************************************************************
@@ -907,7 +932,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_total_potent
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_total_potential_capacity_committed_burst_size (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("1000");
+    return res;
 }
 
 /********************************************************************
@@ -924,7 +951,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_total_potent
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_total_potential_capacity_peak_information_rate (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("1000");
+    return res;
 }
 
 /********************************************************************
@@ -941,7 +970,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_total_potent
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_total_potential_capacity_peak_burst_size (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("1000");
+    return res;
 }
 
 /********************************************************************
@@ -958,7 +989,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_total_potent
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_total_potential_capacity_color_aware (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("true");
+    return res;
 }
 
 /********************************************************************
@@ -975,7 +1008,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_total_potent
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_total_potential_capacity_coupling_flag (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("true");
+    return res;
 }
 
 /********************************************************************
@@ -992,7 +1027,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_total_potent
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_available_capacity_total_size (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("100mbps");
+    return res;
 }
 
 /********************************************************************
@@ -1009,7 +1046,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_available_ca
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_available_capacity_packet_bw_profile_type (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("mef-10.x");
+    return res;
 }
 
 /********************************************************************
@@ -1026,7 +1065,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_available_ca
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_available_capacity_committed_information_rate (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("1000");
+    return res;
 }
 
 /********************************************************************
@@ -1043,7 +1084,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_available_ca
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_available_capacity_committed_burst_size (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("1000");
+    return res;
 }
 
 /********************************************************************
@@ -1060,7 +1103,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_available_ca
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_available_capacity_peak_information_rate (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("1000");
+    return res;
 }
 
 /********************************************************************
@@ -1077,7 +1122,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_available_ca
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_available_capacity_peak_burst_size (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("1000");
+    return res;
 }
 
 /********************************************************************
@@ -1094,7 +1141,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_available_ca
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_available_capacity_color_aware (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("false");
+    return res;
 }
 
 /********************************************************************
@@ -1111,7 +1160,9 @@ static char* cb_get_runtime_network_topology_node_transfer_capacity_available_ca
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_capacity_available_capacity_coupling_flag (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("false");
+    return res;
 }
 
 /********************************************************************
@@ -1348,7 +1399,9 @@ static char* cb_get_runtime_network_topology_node_transfer_cost_cost_characteris
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_integrity_error_characteristic (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("aaa");
+    return res;
 }
 
 /********************************************************************
@@ -1365,7 +1418,9 @@ static char* cb_get_runtime_network_topology_node_transfer_integrity_error_chara
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_integrity_loss_characteristic (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("aaa");
+    return res;
 }
 
 /********************************************************************
@@ -1382,7 +1437,9 @@ static char* cb_get_runtime_network_topology_node_transfer_integrity_loss_charac
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_integrity_repeat_delivery_characteristic (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("aaa");
+    return res;
 }
 
 /********************************************************************
@@ -1399,7 +1456,9 @@ static char* cb_get_runtime_network_topology_node_transfer_integrity_repeat_deli
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_integrity_delivery_order_characteristic (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("aaa");
+    return res;
 }
 
 /********************************************************************
@@ -1416,7 +1475,9 @@ static char* cb_get_runtime_network_topology_node_transfer_integrity_delivery_or
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_integrity_unavailable_time_characteristic (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("aaa");
+    return res;
 }
 
 /********************************************************************
@@ -1433,7 +1494,9 @@ static char* cb_get_runtime_network_topology_node_transfer_integrity_unavailable
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_transfer_integrity_server_integrity_process_characteristic (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("aaa");
+    return res;
 }
 
 /********************************************************************
@@ -1681,7 +1744,9 @@ static char* cb_get_runtime_network_topology_link_node (val_value_t *element)
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_state_administrative_state (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("locked");
+    return res;
 }
 
 /********************************************************************
@@ -1698,7 +1763,9 @@ static char* cb_get_runtime_network_topology_link_state_administrative_state (va
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_state_operational_state (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("disabled");
+    return res;
 }
 
 /********************************************************************
@@ -1715,7 +1782,9 @@ static char* cb_get_runtime_network_topology_link_state_operational_state (val_v
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_state_lifecycle_state (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("installed");
+    return res;
 }
 
 /********************************************************************
@@ -1732,7 +1801,9 @@ static char* cb_get_runtime_network_topology_link_state_lifecycle_state (val_val
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_total_potential_capacity_total_size (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("100mbps");
+    return res;
 }
 
 /********************************************************************
@@ -1749,7 +1820,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_total_potent
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_total_potential_capacity_packet_bw_profile_type (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("mef-10.x");
+    return res;
 }
 
 /********************************************************************
@@ -1766,7 +1839,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_total_potent
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_total_potential_capacity_committed_information_rate (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("10000");
+    return res;
 }
 
 /********************************************************************
@@ -1783,7 +1858,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_total_potent
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_total_potential_capacity_committed_burst_size (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("10000");
+    return res;
 }
 
 /********************************************************************
@@ -1800,7 +1877,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_total_potent
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_total_potential_capacity_peak_information_rate (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("10000");
+    return res;
 }
 
 /********************************************************************
@@ -1817,7 +1896,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_total_potent
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_total_potential_capacity_peak_burst_size (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("10000");
+    return res;
 }
 
 /********************************************************************
@@ -1834,7 +1915,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_total_potent
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_total_potential_capacity_color_aware (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("true");
+    return res;
 }
 
 /********************************************************************
@@ -1851,7 +1934,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_total_potent
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_total_potential_capacity_coupling_flag (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("true");
+    return res;
 }
 
 /********************************************************************
@@ -1868,7 +1953,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_total_potent
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_available_capacity_total_size (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("100mbps");
+    return res;
 }
 
 /********************************************************************
@@ -1885,7 +1972,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_available_ca
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_available_capacity_packet_bw_profile_type (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("mef-10.x");
+    return res;
 }
 
 /********************************************************************
@@ -1902,7 +1991,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_available_ca
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_available_capacity_committed_information_rate (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("10000");
+    return res;
 }
 
 /********************************************************************
@@ -1919,7 +2010,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_available_ca
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_available_capacity_committed_burst_size (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("10000");
+    return res;
 }
 
 /********************************************************************
@@ -1936,7 +2029,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_available_ca
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_available_capacity_peak_information_rate (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("10000");
+    return res;
 }
 
 /********************************************************************
@@ -1953,7 +2048,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_available_ca
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_available_capacity_peak_burst_size (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("10000");
+    return res;
 }
 
 /********************************************************************
@@ -1970,7 +2067,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_available_ca
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_available_capacity_color_aware (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("false");
+    return res;
 }
 
 /********************************************************************
@@ -1987,7 +2086,9 @@ static char* cb_get_runtime_network_topology_link_transfer_capacity_available_ca
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_capacity_available_capacity_coupling_flag (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("true");
+    return res;
 }
 
 /********************************************************************
@@ -2224,7 +2325,9 @@ static char* cb_get_runtime_network_topology_link_transfer_cost_cost_characteris
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_integrity_error_characteristic (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("aaa");
+    return res;
 }
 
 /********************************************************************
@@ -2241,7 +2344,9 @@ static char* cb_get_runtime_network_topology_link_transfer_integrity_error_chara
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_integrity_loss_characteristic (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("aaa");
+    return res;
 }
 
 /********************************************************************
@@ -2258,7 +2363,9 @@ static char* cb_get_runtime_network_topology_link_transfer_integrity_loss_charac
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_integrity_repeat_delivery_characteristic (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("aaa");
+    return res;
 }
 
 /********************************************************************
@@ -2275,7 +2382,9 @@ static char* cb_get_runtime_network_topology_link_transfer_integrity_repeat_deli
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_integrity_delivery_order_characteristic (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("aaa");
+    return res;
 }
 
 /********************************************************************
@@ -2292,7 +2401,9 @@ static char* cb_get_runtime_network_topology_link_transfer_integrity_delivery_or
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_integrity_unavailable_time_characteristic (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("aaa");
+    return res;
 }
 
 /********************************************************************
@@ -2309,7 +2420,9 @@ static char* cb_get_runtime_network_topology_link_transfer_integrity_unavailable
 ********************************************************************/
 static char* cb_get_runtime_network_topology_link_transfer_integrity_server_integrity_process_characteristic (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("aaa");
+    return res;
 }
 
 /********************************************************************
@@ -2848,6 +2961,25 @@ char* cb_get_runtime_element_value(val_value_t *element, const char* moduleName)
             //node
             if(strcmp(element->parent->parent->name, y_tapi_topology_N_node) == 0)
             {
+                //node/owned-node-edge-point
+                if(strcmp(element->parent->name, y_tapi_topology_N_owned_node_edge_point) == 0)
+                {
+                    //node/owned-node-edge-point/termination-direction
+                    if (strcmp(element->name, y_tapi_topology_N_termination_direction) == 0)
+                    {
+                        return cb_get_runtime_network_topology_node_owned_node_edge_point_termination_direction(element);
+                    }
+                    //node/owned-node-edge-point/link-port-direction
+                    if (strcmp(element->name, y_tapi_topology_N_link_port_direction) == 0)
+                    {
+                        return cb_get_runtime_network_topology_node_owned_node_edge_point_link_port_direction(element);
+                    }
+                    //node/owned-node-edge-point/termination-direction
+                    if (strcmp(element->name, y_tapi_topology_N_link_port_role) == 0)
+                    {
+                        return cb_get_runtime_network_topology_node_owned_node_edge_point_link_port_role(element);
+                    }
+                }
                 //node/transfer-capacity
                 if (strcmp(element->parent->name, y_tapi_topology_N_transfer_capacity) == 0)
                 {
@@ -3045,6 +3177,374 @@ char* cb_get_runtime_element_value(val_value_t *element, const char* moduleName)
                 }
             }
         }
+    }
+
+    return NULL;
+}
+
+
+
+
+/********************************************************************
+* FUNCTION cb_get_runtime_node_state_value
+*
+* A general function that calls a specific callback for each attribute, depending on its name
+*
+* INPUTS:
+* val_value_t *element - the element for which we need its value
+*
+* RETURNS:
+*     the value of the element, represented as a string
+********************************************************************/
+char* cb_get_runtime_node_state_value(val_value_t *element)
+{
+    if (strcmp(element->name, y_tapi_topology_N_administrative_state) == 0)
+    {
+        return cb_get_runtime_network_topology_node_state_administrative_state(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_operational_state) == 0)
+    {
+        return cb_get_runtime_network_topology_node_state_operational_state(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_lifecycle_state) == 0)
+    {
+        return cb_get_runtime_network_topology_node_state_lifecycle_state(element);
+    }
+
+    return NULL;
+}
+
+/********************************************************************
+* FUNCTION cb_get_runtime_node_transfer_integrity_value
+*
+* A general function that calls a specific callback for each attribute, depending on its name
+*
+* INPUTS:
+* val_value_t *element - the element for which we need its value
+*
+* RETURNS:
+*     the value of the element, represented as a string
+********************************************************************/
+char* cb_get_runtime_node_transfer_integrity_value(val_value_t *element)
+{
+    if (strcmp(element->name, y_tapi_topology_N_error_characteristic) == 0)
+    {
+        return cb_get_runtime_network_topology_node_transfer_integrity_error_characteristic(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_loss_characteristic) == 0)
+    {
+        return cb_get_runtime_network_topology_node_transfer_integrity_loss_characteristic(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_repeat_delivery_characteristic) == 0)
+    {
+        return cb_get_runtime_network_topology_node_transfer_integrity_repeat_delivery_characteristic(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_delivery_order_characteristic) == 0)
+    {
+        return cb_get_runtime_network_topology_node_transfer_integrity_delivery_order_characteristic(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_unavailable_time_characteristic) == 0)
+    {
+        return cb_get_runtime_network_topology_node_transfer_integrity_unavailable_time_characteristic(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_server_integrity_process_characteristic) == 0)
+    {
+        return cb_get_runtime_network_topology_node_transfer_integrity_server_integrity_process_characteristic(element);
+    }
+
+    return NULL;
+}
+
+/********************************************************************
+* FUNCTION cb_get_runtime_node_owned_node_edge_point_state_value
+*
+* A general function that calls a specific callback for each attribute, depending on its name
+*
+* INPUTS:
+* val_value_t *element - the element for which we need its value
+*
+* RETURNS:
+*     the value of the element, represented as a string
+********************************************************************/
+char* cb_get_runtime_node_owned_node_edge_point_state_value(val_value_t *element)
+{
+    if (strcmp(element->name, y_tapi_topology_N_administrative_state) == 0)
+    {
+        return cb_get_runtime_network_topology_node_owned_node_edge_point_state_administrative_state(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_operational_state) == 0)
+    {
+        return cb_get_runtime_network_topology_node_owned_node_edge_point_state_operational_state(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_lifecycle_state) == 0)
+    {
+        return cb_get_runtime_network_topology_node_owned_node_edge_point_state_lifecycle_state(element);
+    }
+
+    return NULL;
+}
+
+/********************************************************************
+* FUNCTION cb_get_runtime_node_transfer_capacity_total_potential_capacity_value
+*
+* A general function that calls a specific callback for each attribute, depending on its name
+*
+* INPUTS:
+* val_value_t *element - the element for which we need its value
+*
+* RETURNS:
+*     the value of the element, represented as a string
+********************************************************************/
+char* cb_get_runtime_node_transfer_capacity_total_potential_capacity_value(val_value_t *element)
+{
+    if (strcmp(element->name, y_tapi_topology_N_total_size) == 0)
+    {
+        return cb_get_runtime_network_topology_node_transfer_capacity_total_potential_capacity_total_size(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_packet_bw_profile_type) == 0)
+    {
+        return cb_get_runtime_network_topology_node_transfer_capacity_total_potential_capacity_packet_bw_profile_type(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_committed_information_rate) == 0)
+    {
+        return cb_get_runtime_network_topology_node_transfer_capacity_total_potential_capacity_committed_information_rate(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_committed_burst_size) == 0)
+    {
+        return cb_get_runtime_network_topology_node_transfer_capacity_total_potential_capacity_committed_burst_size(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_peak_information_rate) == 0)
+    {
+        return cb_get_runtime_network_topology_node_transfer_capacity_total_potential_capacity_peak_information_rate(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_peak_burst_size) == 0)
+    {
+        return cb_get_runtime_network_topology_node_transfer_capacity_total_potential_capacity_peak_burst_size(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_color_aware) == 0)
+    {
+        return cb_get_runtime_network_topology_node_transfer_capacity_total_potential_capacity_color_aware(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_coupling_flag) == 0)
+    {
+        return cb_get_runtime_network_topology_node_transfer_capacity_total_potential_capacity_coupling_flag(element);
+    }
+
+    return NULL;
+}
+
+/********************************************************************
+* FUNCTION cb_get_runtime_node_transfer_capacity_available_capacity_value
+*
+* A general function that calls a specific callback for each attribute, depending on its name
+*
+* INPUTS:
+* val_value_t *element - the element for which we need its value
+*
+* RETURNS:
+*     the value of the element, represented as a string
+********************************************************************/
+char* cb_get_runtime_node_transfer_capacity_available_capacity_value(val_value_t *element)
+{
+    if (strcmp(element->name, y_tapi_topology_N_total_size) == 0)
+    {
+        return cb_get_runtime_network_topology_node_transfer_capacity_available_capacity_total_size(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_packet_bw_profile_type) == 0)
+    {
+        return cb_get_runtime_network_topology_node_transfer_capacity_available_capacity_packet_bw_profile_type(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_committed_information_rate) == 0)
+    {
+        return cb_get_runtime_network_topology_node_transfer_capacity_available_capacity_committed_information_rate(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_committed_burst_size) == 0)
+    {
+        return cb_get_runtime_network_topology_node_transfer_capacity_available_capacity_committed_burst_size(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_peak_information_rate) == 0)
+    {
+        return cb_get_runtime_network_topology_node_transfer_capacity_available_capacity_peak_information_rate(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_peak_burst_size) == 0)
+    {
+        return cb_get_runtime_network_topology_node_transfer_capacity_available_capacity_peak_burst_size(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_color_aware) == 0)
+    {
+        return cb_get_runtime_network_topology_node_transfer_capacity_available_capacity_color_aware(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_coupling_flag) == 0)
+    {
+        return cb_get_runtime_network_topology_node_transfer_capacity_available_capacity_coupling_flag(element);
+    }
+
+    return NULL;
+}
+
+/********************************************************************
+* FUNCTION cb_get_runtime_link_state_value
+*
+* A general function that calls a specific callback for each attribute, depending on its name
+*
+* INPUTS:
+* val_value_t *element - the element for which we need its value
+*
+* RETURNS:
+*     the value of the element, represented as a string
+********************************************************************/
+char* cb_get_runtime_link_state_value(val_value_t *element)
+{
+    if (strcmp(element->name, y_tapi_topology_N_administrative_state) == 0)
+    {
+        return cb_get_runtime_network_topology_link_state_administrative_state(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_operational_state) == 0)
+    {
+        return cb_get_runtime_network_topology_link_state_operational_state(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_lifecycle_state) == 0)
+    {
+        return cb_get_runtime_network_topology_link_state_lifecycle_state(element);
+    }
+
+    return NULL;
+}
+
+/********************************************************************
+* FUNCTION cb_get_runtime_link_transfer_integrity_value
+*
+* A general function that calls a specific callback for each attribute, depending on its name
+*
+* INPUTS:
+* val_value_t *element - the element for which we need its value
+*
+* RETURNS:
+*     the value of the element, represented as a string
+********************************************************************/
+char* cb_get_runtime_link_transfer_integrity_value(val_value_t *element)
+{
+    if (strcmp(element->name, y_tapi_topology_N_error_characteristic) == 0)
+    {
+        return cb_get_runtime_network_topology_link_transfer_integrity_error_characteristic(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_loss_characteristic) == 0)
+    {
+        return cb_get_runtime_network_topology_link_transfer_integrity_loss_characteristic(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_repeat_delivery_characteristic) == 0)
+    {
+        return cb_get_runtime_network_topology_link_transfer_integrity_repeat_delivery_characteristic(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_delivery_order_characteristic) == 0)
+    {
+        return cb_get_runtime_network_topology_link_transfer_integrity_delivery_order_characteristic(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_unavailable_time_characteristic) == 0)
+    {
+        return cb_get_runtime_network_topology_link_transfer_integrity_unavailable_time_characteristic(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_server_integrity_process_characteristic) == 0)
+    {
+        return cb_get_runtime_network_topology_link_transfer_integrity_server_integrity_process_characteristic(element);
+    }
+
+    return NULL;
+}
+
+/********************************************************************
+* FUNCTION cb_get_runtime_link_transfer_capacity_total_potential_capacity_value
+*
+* A general function that calls a specific callback for each attribute, depending on its name
+*
+* INPUTS:
+* val_value_t *element - the element for which we need its value
+*
+* RETURNS:
+*     the value of the element, represented as a string
+********************************************************************/
+char* cb_get_runtime_link_transfer_capacity_total_potential_capacity_value(val_value_t *element)
+{
+    if (strcmp(element->name, y_tapi_topology_N_total_size) == 0)
+    {
+        return cb_get_runtime_network_topology_link_transfer_capacity_total_potential_capacity_total_size(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_packet_bw_profile_type) == 0)
+    {
+        return cb_get_runtime_network_topology_link_transfer_capacity_total_potential_capacity_packet_bw_profile_type(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_committed_information_rate) == 0)
+    {
+        return cb_get_runtime_network_topology_link_transfer_capacity_total_potential_capacity_committed_information_rate(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_committed_burst_size) == 0)
+    {
+        return cb_get_runtime_network_topology_link_transfer_capacity_total_potential_capacity_committed_burst_size(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_peak_information_rate) == 0)
+    {
+        return cb_get_runtime_network_topology_link_transfer_capacity_total_potential_capacity_peak_information_rate(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_peak_burst_size) == 0)
+    {
+        return cb_get_runtime_network_topology_link_transfer_capacity_total_potential_capacity_peak_burst_size(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_color_aware) == 0)
+    {
+        return cb_get_runtime_network_topology_link_transfer_capacity_total_potential_capacity_color_aware(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_coupling_flag) == 0)
+    {
+        return cb_get_runtime_network_topology_link_transfer_capacity_total_potential_capacity_coupling_flag(element);
+    }
+
+    return NULL;
+}
+
+/********************************************************************
+* FUNCTION cb_get_runtime_link_transfer_capacity_available_capacity_value
+*
+* A general function that calls a specific callback for each attribute, depending on its name
+*
+* INPUTS:
+* val_value_t *element - the element for which we need its value
+*
+* RETURNS:
+*     the value of the element, represented as a string
+********************************************************************/
+char* cb_get_runtime_link_transfer_capacity_available_capacity_value(val_value_t *element)
+{
+    if (strcmp(element->name, y_tapi_topology_N_total_size) == 0)
+    {
+        return cb_get_runtime_network_topology_link_transfer_capacity_available_capacity_total_size(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_packet_bw_profile_type) == 0)
+    {
+        return cb_get_runtime_network_topology_link_transfer_capacity_available_capacity_packet_bw_profile_type(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_committed_information_rate) == 0)
+    {
+        return cb_get_runtime_network_topology_link_transfer_capacity_available_capacity_committed_information_rate(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_committed_burst_size) == 0)
+    {
+        return cb_get_runtime_network_topology_link_transfer_capacity_available_capacity_committed_burst_size(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_peak_information_rate) == 0)
+    {
+        return cb_get_runtime_network_topology_link_transfer_capacity_available_capacity_peak_information_rate(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_peak_burst_size) == 0)
+    {
+        return cb_get_runtime_network_topology_link_transfer_capacity_available_capacity_peak_burst_size(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_color_aware) == 0)
+    {
+        return cb_get_runtime_network_topology_link_transfer_capacity_available_capacity_color_aware(element);
+    }
+    else if (strcmp(element->name, y_tapi_topology_N_coupling_flag) == 0)
+    {
+        return cb_get_runtime_network_topology_link_transfer_capacity_available_capacity_coupling_flag(element);
     }
 
     return NULL;
