@@ -311,12 +311,6 @@ status_t cb_get_all_node_labels(char *topology_uuid, char *link_uuid, char **key
     SETKEY("node_label_default", 1);
 }
 
-status_t cb_get_all_node_owned_node_edge_point_client_node_edge_points(char *topology_uuid, char *node_uuid, char *owned_node_edge_point_uuid,
-        char **key_list, int *num)
-{
-    SETKEY("client_node_edge_point_default", 1);
-}
-
 status_t cb_get_all_node_owned_node_edge_point_layer_protocols(char *topology_uuid, char *node_uuid, char *owned_node_edge_point_uuid,
         char **key_list, int *num)
 {
@@ -329,10 +323,27 @@ status_t cb_get_all_node_owned_node_edge_point_layer_protocol_names(char *topolo
     SETKEY("name_default", 1);
 }
 
+status_t cb_get_all_node_owned_node_edge_point_client_node_edge_points(char *topology_uuid, char *node_uuid, char *owned_node_edge_point_uuid,
+        char **key_list, int *num)
+{
+    SETKEY("client_node_edge_point_default", 1);
+}
+
 status_t cb_get_all_node_owned_node_edge_point_mapped_service_end_points(char *topology_uuid, char *node_uuid, char *owned_node_edge_point_uuid,
         char **key_list, int *num)
 {
     SETKEY("mapped_service_end_point_default", 1);
+}
+
+status_t cb_get_all_node_owned_node_edge_point_names(char *topology_uuid, char *node_uuid, char *owned_node_edge_point_uuid,
+        char **key_list, int *num)
+{
+    SETKEY("name", 1);
+}
+status_t cb_get_all_node_owned_node_edge_point_labels(char *topology_uuid, char *node_uuid, char *owned_node_edge_point_uuid,
+        char **key_list, int *num)
+{
+    SETKEY("label", 1);
 }
 
 status_t cb_get_all_node_transfer_capacity_capacity_assigned_to_user_views(char *topology_uuid, char *node_uuid, char **key_list, int *num)
@@ -731,7 +742,9 @@ static char* cb_get_runtime_network_topology_node_owned_node_edge_point_name_val
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_owned_node_edge_point_name_value (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("value");
+    return res;
 }
 
 /********************************************************************
@@ -765,7 +778,9 @@ static char* cb_get_runtime_network_topology_node_owned_node_edge_point_label_va
 ********************************************************************/
 static char* cb_get_runtime_network_topology_node_owned_node_edge_point_label_value (val_value_t *element)
 {
-
+    char *res = NULL;
+    res = strdup("value");
+    return res;
 }
 
 /********************************************************************
@@ -3148,6 +3163,22 @@ char* cb_get_runtime_element_value(val_value_t *element, const char* moduleName)
                         if (strcmp(element->name, y_tapi_topology_N_termination_state) == 0)
                         {
                             return cb_get_runtime_network_topology_node_owned_node_edge_point_layer_protocol_termination_state(element);
+                        }
+                    }
+                    //node/owned-node-edge-point/name
+                    if (strcmp(element->parent->name, y_tapi_topology_N_name) == 0)
+                    {
+                        if (strcmp(element->name, y_tapi_topology_N_value) == 0)
+                        {
+                            return cb_get_runtime_network_topology_node_owned_node_edge_point_name_value(element);
+                        }
+                    }
+                    //node/owned-node-edge-point/label
+                    if (strcmp(element->parent->name, y_tapi_topology_N_label) == 0)
+                    {
+                        if (strcmp(element->name, y_tapi_topology_N_value) == 0)
+                        {
+                            return cb_get_runtime_network_topology_node_owned_node_edge_point_label_value(element);
                         }
                     }
                 }

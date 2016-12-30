@@ -6611,6 +6611,36 @@ static status_t attach_node_owned_node_edge_point_list(val_value_t *parent_val, 
      */
     ATTACH_LEAF(owned_node_edge_point_val, link_port_role);
 
+    /*
+     * Attach /network-topology/node/owned-node-edge-point/name list
+     */
+    char *name_list[MAX_NUMBER_OF_ELEMENTS];
+    int num_of_names = 0;
+
+    res = cb_get_all_node_owned_node_edge_point_names(topology_uuid, node_uuid, owned_node_edge_point_uuid, name_list, &num_of_names);
+    YUMA_ASSERT(res != NO_ERR, return ERR_INTERNAL_VAL, "cb_get_all_node_names failed!");
+    for (int i=0; i<num_of_names; ++i)
+    {
+        attach_name_list(owned_node_edge_point_val, name_list[i]);
+
+        free(name_list[i]);
+    }
+
+    /*
+     * Attach /network-topology/node/owned-node-edge-point/label list
+     */
+    char *label_list[MAX_NUMBER_OF_ELEMENTS];
+    int num_of_labels = 0;
+
+    res = cb_get_all_node_owned_node_edge_point_labels(topology_uuid, node_uuid, owned_node_edge_point_uuid, label_list, &num_of_labels);
+    YUMA_ASSERT(res != NO_ERR, return ERR_INTERNAL_VAL, "cb_get_all_node_labels failed!");
+    for (int i=0; i<num_of_labels; ++i)
+    {
+        attach_label_list(owned_node_edge_point_val, label_list[i]);
+
+        free(label_list[i]);
+    }
+
     return NO_ERR;
 }
 
