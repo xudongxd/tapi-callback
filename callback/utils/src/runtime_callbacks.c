@@ -145,7 +145,7 @@ static char* cb_get_runtime_network_topology_label_value (val_value_t *element);
 
 
 
-
+#define CNT 1
 
 #define SETKEY(key, cnt) \
 ({ \
@@ -178,7 +178,7 @@ static char* cb_get_runtime_network_topology_label_value (val_value_t *element);
 ********************************************************************/
 status_t cb_get_all_network_topologies(char **key_list, int *num)
 {
-    SETKEY("topology_default", 1);
+    SETKEY("topology_default", CNT);
 }
 
 /********************************************************************
@@ -197,73 +197,73 @@ status_t cb_get_all_network_topologies(char **key_list, int *num)
 ********************************************************************/
 status_t cb_get_all_links(char *topology_uuid, char **key_list, int *num)
 {
-    SETKEY("link_default", 1);
+    SETKEY("link_default", CNT);
 }
 
 status_t cb_get_all_link_node_edge_points(char *topology_uuid, char *link_uuid, char **key_list, int *num)
 {
-    SETKEY("link_node_edge_point_default", 1);
+    SETKEY("link_node_edge_point_default", CNT);
 }
 
 status_t cb_get_all_link_nodes(char *topology_uuid, char *link_uuid, char **key_list, int *num)
 {
-    SETKEY("link_node_default", 1);
+    SETKEY("link_node_default", CNT);
 }
 
 status_t cb_get_all_link_layer_protocol_names(char *topology_uuid, char *link_uuid, char **key_list, int *num)
 {
-    SETKEY("och", 1);
+    SETKEY("och", CNT);
 }
 
 status_t cb_get_all_link_names(char *topology_uuid, char *link_uuid, char **key_list, int *num)
 {
-    SETKEY("link_name_default", 1);
+    SETKEY("link_name_default", CNT);
 }
 
 status_t cb_get_all_link_labels(char *topology_uuid, char *link_uuid, char **key_list, int *num)
 {
-    SETKEY("link_label_default", 1);
+    SETKEY("link_label_default", CNT);
 }
 
 status_t cb_get_all_link_transfer_capacity_capacity_assigned_to_user_views(char *topology_uuid, char *link_uuid, char **key_list, int *num)
 {
-    SETKEY("10gbps",1);
+    SETKEY("10gbps", CNT);
 }
 
 status_t cb_get_all_link_transfer_cost_cost_characteristics(char *topology_uuid, char *link_uuid, char **key_list, int *num)
 {
-    SETKEY("name value algorithm",1);
+    SETKEY("name value algorithm", CNT);
 }
 
 status_t cb_get_all_link_transfer_timing_latency_characteristics(char *topology_uuid, char *link_uuid, char **key_list, int *num)
 {
-    SETKEY("name queing_latency",1);
+    SETKEY("name queing_latency", CNT);
 }
 
 status_t cb_get_all_link_risk_parameter_risk_characteristics(char *topology_uuid, char *link_uuid, char **key_list, int *num)
 {
-    SETKEY("risk_characteristic_default",1);
+    SETKEY("risk_characteristic_default", CNT);
 }
 
 status_t cb_get_all_link_validation_validation_mechanisms(char *topology_uuid, char *link_uuid, char **key_list, int *num)
 {
-    SETKEY("validation mechanism default",1);
+    SETKEY("validation mechanism default", CNT);
 }
 
 status_t cb_get_all_link_lp_transition_transitioned_layer_protocol_names(char *topology_uuid, char *link_uuid, char **key_list, int *num)
 {
-    SETKEY("och",1);
+    SETKEY("och", CNT);
 }
 
 status_t cb_get_all_link_lp_transition_node_edge_points(char *topology_uuid, char *link_uuid, char **key_list, int *num)
 {
-    SETKEY("lp_transition_node_edge_point_default",1);
+    SETKEY("lp_transition_node_edge_point_default", CNT);
 } 
 
 status_t cb_get_all_link_risk_parameter_risk_characteristic_risk_identifiers(char *topology_uuid, char *link_uuid ,char *risk_parameter_name,
         char **key_list, int *num)
 {
-    SETKEY("risk_identifier_default",1);
+    SETKEY("risk_identifier_default", CNT);
 }
 
 
@@ -283,82 +283,82 @@ status_t cb_get_all_link_risk_parameter_risk_characteristic_risk_identifiers(cha
 ********************************************************************/
 status_t cb_get_all_nodes(char *topology_uuid, char **key_list, int *num)
 {
-    SETKEY("node_default", 1);
+    SETKEY("node_default", CNT);
 }
 
 status_t cb_get_all_node_owned_node_edge_points(char *topology_uuid, char *node_uuid, char **key_list, int *num)
 {
-    SETKEY("owned_node_edge_point_default", 1);
+    SETKEY("owned_node_edge_point_default", CNT);
 }
 
 status_t cb_get_all_node_aggregated_node_edge_points(char *topology_uuid, char *node_uuid, char **key_list, int *num)
 {
-    SETKEY("owned_node_edge_point_default", 1);
+    SETKEY("owned_node_edge_point_default", CNT);
 }
 
 status_t cb_get_all_node_layer_protocol_names(char *topology_uuid, char *node_uuid, char **key_list, int *num)
 {
-    SETKEY("och", 1);
+    SETKEY("och", CNT);
 }
 
 status_t cb_get_all_node_names(char *topology_uuid, char *link_uuid, char **key_list, int *num)
 {
-    SETKEY("node_name_default", 1);
+    SETKEY("node_name_default", CNT);
 }
 
 status_t cb_get_all_node_labels(char *topology_uuid, char *link_uuid, char **key_list, int *num)
 {
-    SETKEY("node_label_default", 1);
+    SETKEY("node_label_default", CNT);
 }
 
 status_t cb_get_all_node_owned_node_edge_point_layer_protocols(char *topology_uuid, char *node_uuid, char *owned_node_edge_point_uuid,
         char **key_list, int *num)
 {
-    SETKEY("layer_protocols_default", 1);
+    SETKEY("layer_protocols_default", CNT);
 }
 
 status_t cb_get_all_node_owned_node_edge_point_layer_protocol_names(char *topology_uuid, char *node_uuid, char *owned_node_edge_point_uuid,
         char *layer_protocol_local_id, char **key_list, int *num)
 {
-    SETKEY("name_default", 1);
+    SETKEY("name_default", CNT);
 }
 
 status_t cb_get_all_node_owned_node_edge_point_client_node_edge_points(char *topology_uuid, char *node_uuid, char *owned_node_edge_point_uuid,
         char **key_list, int *num)
 {
-    SETKEY("client_node_edge_point_default", 1);
+    SETKEY("client_node_edge_point_default", CNT);
 }
 
 status_t cb_get_all_node_owned_node_edge_point_mapped_service_end_points(char *topology_uuid, char *node_uuid, char *owned_node_edge_point_uuid,
         char **key_list, int *num)
 {
-    SETKEY("mapped_service_end_point_default", 1);
+    SETKEY("mapped_service_end_point_default", CNT);
 }
 
 status_t cb_get_all_node_owned_node_edge_point_names(char *topology_uuid, char *node_uuid, char *owned_node_edge_point_uuid,
         char **key_list, int *num)
 {
-    SETKEY("name", 1);
+    SETKEY("name", CNT);
 }
 status_t cb_get_all_node_owned_node_edge_point_labels(char *topology_uuid, char *node_uuid, char *owned_node_edge_point_uuid,
         char **key_list, int *num)
 {
-    SETKEY("label", 1);
+    SETKEY("label", CNT);
 }
 
 status_t cb_get_all_node_transfer_capacity_capacity_assigned_to_user_views(char *topology_uuid, char *node_uuid, char **key_list, int *num)
 {
-    SETKEY("10gbps",1);
+    SETKEY("10gbps", CNT);
 }
 
 status_t cb_get_all_node_transfer_cost_cost_characteristics(char *topology_uuid, char *node_uuid, char **key_list, int *num)
 {
-    SETKEY("name value algorithm",1);
+    SETKEY("name value algorithm", CNT);
 }
 
 status_t cb_get_all_node_transfer_timing_latency_characteristics(char *topology_uuid, char *node_uuid, char **key_list, int *num)
 {
-    SETKEY("name queing_latency",1);
+    SETKEY("name queing_latency", CNT);
 }
 
 
@@ -378,7 +378,7 @@ status_t cb_get_all_node_transfer_timing_latency_characteristics(char *topology_
 ********************************************************************/
 status_t cb_get_all_layer_protocol_names(char *topology_uuid, char **key_list, int *num)
 {
-    SETKEY("och", 1);
+    SETKEY("och", CNT);
 }
 
 
@@ -398,7 +398,7 @@ status_t cb_get_all_layer_protocol_names(char *topology_uuid, char **key_list, i
 ********************************************************************/
 status_t cb_get_all_names(char *topology_uuid, char **key_list, int *num)
 {
-    SETKEY("name", 1);
+    SETKEY("name", CNT);
 }
 
 
@@ -418,7 +418,7 @@ status_t cb_get_all_names(char *topology_uuid, char **key_list, int *num)
 ********************************************************************/
 status_t cb_get_all_labels(char *topology_uuid, char **key_list, int *num)
 {
-    SETKEY("label", 1);
+    SETKEY("label", CNT);
 }
 
 

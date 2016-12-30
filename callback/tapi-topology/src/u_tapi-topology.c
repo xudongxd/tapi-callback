@@ -5581,8 +5581,6 @@ static status_t attach_link_list(val_value_t *parent_val)
     res = cb_get_all_links(topology_uuid, link_uuid_list, &num_of_links);
     YUMA_ASSERT(res != NO_ERR, return ERR_INTERNAL_VAL, "cb_get_all_link_uuids failed!");
 
-    YUMA_ASSERT(TRUE, NOP, "cb_get_all_links was called!");
-
     for (int i=0; i<num_of_links; ++i)
     {
         res = attach_link_elements(parent_val, link_uuid_list[i]);
